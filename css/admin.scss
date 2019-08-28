@@ -31,7 +31,7 @@ $sidebar-menuitem-link-color-hover: $secondary;
 $sidebar-menuitem-link-color-active: $secondary;
 $sidebar-menuitem-arrow-active: $secondary;
 
-$sidebar-submenu-link-color: '#bbb';
+$sidebar-submenu-link-color: #bbbbbb;
 $sidebar-submenu-link-color-hover: white;
 $sidebar-submenu-link-color-active: white;
 $sidebar-submenu-bg: $primary;
@@ -46,7 +46,9 @@ $notice-warning-border-color: $primary;
 $plugin-update-border-color: $secondary;
 
 
-
+#adminmenu #wfMenuCallout{
+	color:$sidebar-menuitem-link-color !important;
+}
 
 .wp-person a:focus .gravatar, a:focus, a:focus .media-icon img,.wp-core-ui .button-link:focus
 {
@@ -862,7 +864,7 @@ ul#adminmenu>li.current>a.current:after {
 #adminmenu .awaiting-mod, 
 #adminmenu .update-plugins, 
 #sidemenu li a span.update-plugins {
-	background-color: $sidebar-notification-bg;
+	background-color: $sidebar-notification-bg !important;
 	color: $sidebar-notification-color;
 }
 #adminmenu div.wp-menu-image {
